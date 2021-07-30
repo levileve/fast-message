@@ -1,0 +1,42 @@
+{
+  "presets": [
+    "es2015",
+    "stage-3"
+  ],
+  "sourceMaps": true,
+  "retainLines": true,
+  "plugins": [
+    [
+      "transform-runtime",
+      {
+        "polyfill": false,
+        "regenerator": true
+      }
+    ],
+    [
+      "transform-class-properties",
+      {
+        "spec": true
+      }
+    ],
+    [
+      "babel-plugin-transform-builtin-extend",
+      {
+        "globals": [
+          "Error",
+          "Array"
+        ]
+      }
+    ],
+    [
+      "transform-object-rest-spread"
+    ]
+  ],
+  "ignore": [
+    ".nyc_output",
+    "node_modules",
+    "coverage",
+    "files",
+    ".tmp"
+  ]
+}
