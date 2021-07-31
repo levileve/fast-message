@@ -12,6 +12,7 @@ Ferramentas:
 - VSCode;
 - Mongodb (site);
 - Postman;
+- Docker e Docker Compose
 
 Framework e libs principais:
 - NodeJs v14.16.0
@@ -21,19 +22,19 @@ Framework e libs principais:
 # 📝 Como usar
 * Ambiente local:
 - Instale todo o ambiente NodeJs necessário na sua máquina;
-- Instale todo o ambiente Docker necessário na sua máquina, caso queira utilizar o Docker;
+- Instale todo o ambiente Docker e Docker compose necessário na sua máquina, caso queira utilizar o Docker;
 - Abra um terminal com a pasta do projeto;
-
-- Rodo o primeiro comando:
-    - npm install
-
 - Rode um dos comandos:
 
     - Roda o projeto utilizando só ambiente Node.
+        - npm install
         - npm run start
 
     - Roda o projeto utilizando só ambiente Docker.
-        - npm run start-docker
+        - Para matar a aplicação que já estiver de pé no Docker Compose rode:
+            - docker compose down
+        - Para rodar a aplicação:
+            - docker compose up
 
     - Após iniciar o projeto:
     
@@ -47,6 +48,8 @@ Foi utilizado o próprio site do [mongodb](https://www.mongodb.com) como hospeda
 
 # 🔗 Links
 * [Documentação do projeto no Postman](https://documenter.getpostman.com/view/14748428/TzeajmEF).
+
+* [Site para baixar Postman](https://www.postman.com/downloads/).
 
 * [Site do Mongodb](https://www.mongodb.com).
 

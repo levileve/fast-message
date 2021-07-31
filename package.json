@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "start-docker": "docker compose down && docker compose up",
+    "start-docker": "rm -rf node_modules && rm -rf package-lock && npm install && node index.js",
     "start-dev": "npx nodemon -- -r esm -r dotenv/config index.js",
     "lint": "npx eslint -c .eslintrc --ext .js ./src --fix",
     "precommit": "npm run lint"
